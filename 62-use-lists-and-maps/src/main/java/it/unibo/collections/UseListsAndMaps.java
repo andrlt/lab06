@@ -1,6 +1,7 @@
 package it.unibo.collections;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.ListIterator;
@@ -53,6 +54,10 @@ public final class UseListsAndMaps {
         /*
          * 4) Using a single for-each, print the contents of the arraylist.
          */
+        for (int el: l2) {
+            System.out.println(el);
+        }
+
         /*
          * 5) Measure the performance of inserting new elements in the head of
          * the collection: measure the time required to add 100.000 elements as
@@ -60,6 +65,7 @@ public final class UseListsAndMaps {
          * using the previous lists. In order to measure times, use as example
          * TestPerformance.java.
          */
+
         /*
          * 6) Measure the performance of reading 1000 times an element whose
          * position is in the middle of the collection for both ArrayList and
@@ -82,6 +88,15 @@ public final class UseListsAndMaps {
          *
          * Oceania -> 38,304,000
          */
+        final Map <String, Long> map = new HashMap<>();
+        map.put("Africa", 1110635000L);
+        map.put("Americas",972005000L);
+        map.put("Antarctica",0L);
+        map.put("Asia", 4298723000L);
+        map.put("Europe", 742452000L);
+        map.put("Oceania", 38304000L);
+    
+
         /*
          * 8) Compute the population of the world
          */
